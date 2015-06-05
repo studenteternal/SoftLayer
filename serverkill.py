@@ -15,6 +15,6 @@ kill_servers = FH.read().splitlines()
 
 for server in kill_servers:
 	print "Killing " + server
-	client['Virtual_Guest'].deleteObject(server)
+	client['Virtual_Guest'].deleteObject(id=server)
 
 FH.close()
