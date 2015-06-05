@@ -1,0 +1,23 @@
+This document is to design, set stadnards, and take note of potential feature improvments for the grab bag of scripts and other code deigned to make
+life eaiser when using SoftLayer's Infrastructure as a Serice platform.
+
+Variable naming standards. 
+
+one letter variables should be used for locally signifigant, not re-used purposes. E.G. Loop counters
+
+Non-API related variables should be named inb a logical fashion, with compands joined by underscores. E.G. server_id
+
+
+features current
+
+IPdemo - creates a number os servers specific in a loop
+
+server kill - removes virtual servers.
+
+features future 
+New name for server build script. 
+Pull virtual server charachteristics from a configuration file, 
+	put configuration for common servers into a web resource to create a 'menu' of "approved" server configuraitons
+add server meta-data to created and existing servers to avoid using names to sort server \ server role
+
+
