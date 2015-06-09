@@ -30,6 +30,6 @@ while n < 2:
 		'blockDevices': [{'device': '0', 'diskImage': {'capacity': 100}}],
 		'operatingSystemReferenceCode': 'WIN_2012-STD_64',
 		'primaryBackendNetworkComponent': {'networkVlan': {'id': 773482}},
-		'provisionScripts': {https://https://mex01.objectstorage.softlayer.net/v1/AUTH_3d7f3c03-9b34-418d-96f1-09a45712c21c/Jbsampso_startup_scripts/post_test.py}
+		'postInstallScriptUri': 'https://mex01.objectstorage.softlayer.net/v1/AUTH_3d7f3c03-9b34-418d-96f1-09a45712c21c/Jbsampso_startup_scripts/post_test.sh',
 })
 
