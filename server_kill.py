@@ -13,6 +13,10 @@ FH = open('kill-file','r')
 
 kill_servers = FH.read().splitlines()
 
+#debug lines
+#print type(kill_servers) 
+#print (kill_servers)
+
 for server in kill_servers:
 	print "Killing " + server
 	client['Virtual_Guest'].deleteObject(id=server)
