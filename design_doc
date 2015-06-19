@@ -19,5 +19,7 @@ New name for server build script.
 Pull virtual server charachteristics from a configuration file, 
 	put configuration for common servers into a web resource to create a 'menu' of "approved" server configuraitons
 add server meta-data to created and existing servers to avoid using names to sort server \ server role
+add server counter to make all server name unique and make server counter persistant
+add optional code to auto populate kill file with server ID
 
 
