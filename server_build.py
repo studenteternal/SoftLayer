@@ -17,7 +17,7 @@ count = 1
 
 kill_file = open("kill-file",'a')
 
-while n < 5:
+while n < 2:
 	server_name = 'jbsampsobuntutemp' + str(count) 
 	n = n + 1
 	server_return = client['Virtual_Guest'].createObject({
@@ -33,13 +33,16 @@ while n < 5:
 		'blockDevices': [{'device': '0', 'diskImage': {'capacity': 100}}],
 		'operatingSystemReferenceCode': 'UBUNTU_latest',
 		'primaryBackendNetworkComponent': {'networkVlan': {'id': 773482}},
-		'postInstallScriptUri': 'https://mex01.objectstorage.softlayer.net/v1/AUTH_3d7f3c03-9b34-418d-96f1-09a45712c21c/Jbsampso_startup_scripts/post_test.sh',
+#		'tags': 'jbsampso,temp',
+#		'postInstallScriptUri': 'https://mex01.objectstorage.softlayer.net/v1/AUTH_3d7f3c03-9b34-418d-96f1-09a45712c21c/Jbsampso_startup_scripts/post_test.sh',
 	})
 	count = count + 1 
 	kill_file.write(str(server_return['id']) + '\n')
 #	print server_return
 #	server_return = server_return.split(',')
 #	print server_return[15]
+	client['Virtual_Guest'].setUserMetadata(id=server_return['id']{
+		'metadata': {'jbsampso, temp'}}
 
 kill_file.close()
 credsFile.close()
